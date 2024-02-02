@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            color: white;
+            font-size: 40px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: white;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #242424;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .icon {
+            margin-top: 40px;
+        }
+
+        .icon a {
+            color: #242424;
+            margin: 0 20px;
+            transition: color 0.3s;
+            font-size: 30px;
+        }
+
+        .icon a:hover {
+            color: #242424;
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-icons li {
+            margin: 0 15px;
+        }
+
+        .social-icons a i {
+            transition: color 0.3s;
+        }
+
+        .logo {
+            margin-bottom: 40px;
+        }
+
+        .logo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .message {
+            background-color: #242424;
+            padding: 50px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .divider {
+            width: auto;
+            height: 3px;
+            background-color: white;
+            margin: 40px auto;
+        }
+
+        .contact-info {
+            margin-bottom: 40px;
+        }
+
+        .contact-info p {
+            margin: 15px 0;
+            font-size: 20px;
+            color: white;
+        }
+
+        .cta-button {
+            margin-bottom: 40px;
+        }
+
+        .cta-button a {
+            display: inline-block;
+            background-color: #242424;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            font-size: 24px;
+        }
+
+        .cta-button a:hover {
+            background-color: #0056b3;
+        }
+
+        .signature {
+            color: white;
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        .signature i {
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="background-color: black">
+        <div class="logo">
+            <h1 class="m-0 text-primary" style="color: white">Inkcognito</h1>
+        </div>
+        <div class="message">
+            <h2>{{ subject }}</h2>
+            <div class="divider"></div>
+            <p style="white-space: pre-wrap;">{{ body }}</p>
+            <hr>
+            <p>If you have any further questions, please feel free to contact us. Thank you for your patience.</p>
+            <div class="divider"></div>
+            <p>Best regards,</p>
+            <div class="signature">
+                <i class="fas fa-tint fa-xs"></i>Inkcognito
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>For any further assistance, please contact us at:</p>
+            <p>Email: yourname@company.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+        <div class="cta-button">
+            <a href="https://www.yourwebsite.com" target="_blank">Visit Our Website</a>
+        </div>
+        <div class="footer">
+            <p>Connect with us:</p>
+            <table align="center" style="margin: 0 auto; max-width: 250px;">
+                <tr>
+                    <td style="padding: 0 10px; width: 33.33%;">
+                        <a href="https://www.facebook.com/yourcompany">
+<img width="48" height="48" src="https://img.icons8.com/color/48/facebook.png" alt="facebook"/>                     
+                      </a>
+                    </td>
+                    <td style="padding: 0 10px; width: 33.33%;">
+                        <a href="https://www.twitter.com/yourcompany">
+<img width="48" height="48" src="https://img.icons8.com/color/48/twitterx--v1.png" alt="twitterx--v1"/>
+                        </a>
+                    </td>
+                    <td style="padding: 0 10px; width: 33.33%;">
+                        <a href="https://www.instagram.com/yourcompany">
+<img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
